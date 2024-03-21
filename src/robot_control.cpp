@@ -15,19 +15,19 @@ void keyboardCallback(const std_msgs::Char::ConstPtr& msg) {
     // Mise à jour de la vitesse en fonction de la touche pressée
     switch (msg->data) {
         case '8':
-            twist.linear.x = 5.0;
+            twist.linear.x = 1.0;
             twist.angular.z = 0.0;
             break;
         case '4':
-            twist.angular.z = 5.0;
+            twist.angular.z = 1.0;
             twist.linear.x = 0.0;
             break;
         case '6':
-            twist.angular.z = -5.0;
+            twist.angular.z = -1.0;
             twist.linear.x = 0.0;
             break;
         case '2':
-            twist.linear.x = -5.0;
+            twist.linear.x = -1.0;
             twist.angular.z = 0.0;
             break;
         case '5':
