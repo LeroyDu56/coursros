@@ -135,8 +135,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/coursros_node.cpp)
-add_executable(keyboard_listener src/keyboard_listener.cpp)
-target_link_libraries(keyboard_listener ${catkin_LIBRARIES})
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -152,8 +151,8 @@ target_link_libraries(keyboard_listener ${catkin_LIBRARIES})
 #   ${catkin_LIBRARIES}
 # )
 
-add_executable(robot_control src/robot_control.cpp)
-target_link_libraries(robot_control ${catkin_LIBRARIES})
+add_executable(cmd_06 src/cmd_06.cpp)
+target_link_libraries(cmd_06 ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
